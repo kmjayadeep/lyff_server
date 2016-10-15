@@ -1,0 +1,25 @@
+codes
+--------
+1 -> success
+0 -> validation error
+
+status
+----------
+
+400 -> validation error
+
+
+{
+  "message": {
+    "code": 11000,
+    "index": 0,
+    "errmsg": "E11000 duplicate key error index: help.users.$username_1 dup key: { : \"raju1\" }",
+    "op": {
+      "password": "d41d8cd98f00b204e9800998ecf8427e",
+      "username": "raju1",
+      "_id": "5802030394c72e72ca80d934",
+      "phr": [],
+      "__v": 0
+    }
+  }
+}

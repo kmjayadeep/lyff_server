@@ -29,11 +29,24 @@ const Schema = new mongoose.Schema({
     }
     experience: Number,
     contactNo: String,
+    contactPrivacy: {
+        type: String,
+        enum: ['private', 'public'],
+        default: 'private'
+    },
+    accepts:{
+    	type:Number,
+    	default:0
+    },
+    rejects:{
+    	type:Number,
+    	default:0
+    },
     department: String,
-    location:{
-    	lat:Number,
-    	long:Number,
-    	updated:Date
+    location: {
+        lat: Number,
+        long: Number,
+        lastUpdated: Date
     }
 })
 

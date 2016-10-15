@@ -23,16 +23,11 @@ const Schema = new mongoose.Schema({
         city: String,
         state: String
     },
-    phr: {
-        fields: [{
-            field: String,
-            value: String
-        }],
-        lastUpdated: {
-            type: Date,
-            value: Date.now()
-        }
-    }
+    phr: [{
+        field: String,
+        value: String,
+        lastUpdated:Date
+    }],
 })
 
 var User = mongoose.model('user', Schema)
